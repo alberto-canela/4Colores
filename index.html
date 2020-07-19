@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Juego de Colores</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 my-5">
+          <h2 class="mb-3">Tipos de Personalidad: Juego de Palabras</h2>
+          <div id="question-page">
+            <p>
+              Compara los 4 grupos de palabras y ordenalos (deslizando los
+              bloques) en orden descendente del que más se parece a usted al
+              menos parecido.
+            </p>
+            <p class="justify-content-center">MAYOR PARCECIDO</p>
+            <div class="list-group mb-3" id="tareas"></div>
+            <p class="justify-content-center">MENOR PARECIDO</p>
+          </div>
+
+          <div class="d-none" id="results">
+            <h4 class="mb-3 justify-content-center">
+              Resultado: Perfil Personal
+            </h4>
+            <div class="card mb-3">
+              <div class="card-body">
+                <canvas id="result-bars"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end">
+            <button
+              type="button"
+              id="back-button"
+              class="btn btn-primary mr-3 d-none"
+              onClick="renderPreviousQuestion()"
+            >
+              Anterior
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="next-button"
+              onClick="renderNextQuestion()"
+            >
+              Próximo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+    <script src="js/color-game.js"></script>
+  </body>
+</html>
