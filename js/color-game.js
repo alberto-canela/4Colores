@@ -3,6 +3,7 @@
  * July 19, 2020
  * Color Game based on true colors personality games to identify the color profile of a person based on the four core colors.
  * Use of drag and drop functionality for sorting the options.
+ * Updated July 25, 2021 to remove form button
  */
 
 /**Test Defined group of words for the personality game*/
@@ -236,7 +237,7 @@ function renderResults() {
   //Show Result Canvas
   resultCard.classList.remove("d-none");
   //Show google form link button
-  sendButton.classList.remove("d-none");
+  //sendButton.classList.remove("d-none");
 
   //Update bar graph with current results
   bar.data.datasets[0].data = [
@@ -256,7 +257,7 @@ function hideResults() {
   //Hide Result Canvas
   resultCard.classList.add("d-none");
   //hide Submit Button
-  sendButton.classList.add("d-none");
+  //sendButton.classList.add("d-none");
 }
 
 /**Hides the next button */
