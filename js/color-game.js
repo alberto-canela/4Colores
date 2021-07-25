@@ -73,7 +73,7 @@ const questionPage = document.getElementById("question-page");
 const resultCard = document.getElementById("results");
 const nextButton = document.getElementById("next-button");
 const backButton = document.getElementById("back-button");
-const sendButton = document.getElementById("send-button");
+//const sendButton = document.getElementById("send-button");
 const chBar = document.getElementById("result-bars");
 const chartData = {
   labels: ["Naranja", "Oro", "Azul", "Verde"],
@@ -280,11 +280,11 @@ function showBackButton() {
 }
 
 /**Sends the current color values to a google form used for attendance on the UNIv curse */
-function sendResultsToUNIV() {
-  window.open(
-    `https://docs.google.com/forms/d/e/1FAIpQLSd6AHiDsGbhIXXjQr6akOum5i-hqPAcQf3GQrKDyrdaEaV7Hg/viewform?usp=pp_url&entry.1461968426=${control.naranja}&entry.134581804=${control.oro}&entry.273633143=${control.azul}&entry.1876210831=${control.verde}`
-  );
-}
+//function sendResultsToUNIV() {
+//  window.open(
+ //   `https://docs.google.com/forms/d/e/1FAIpQLSd6AHiDsGbhIXXjQr6akOum5i-hqPAcQf3GQrKDyrdaEaV7Hg/viewform?usp=pp_url&entry.1461968426=${control.naranja}&entry.134581804=${control.oro}&entry.273633143=${control.azul}&entry.1876210831=${control.verde}`
+ // );
+//}
 
 //Init Script: Start Sortable.js and render first page
 var sortable = Sortable.create(tareas, {
